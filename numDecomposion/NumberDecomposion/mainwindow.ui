@@ -240,7 +240,7 @@ QComboBox::down-arrow
      <string>Canonical decomposition : </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="decompEdit">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -250,7 +250,7 @@ QComboBox::down-arrow
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="decompButton">
     <property name="geometry">
      <rect>
       <x>239</x>
@@ -287,7 +287,7 @@ QComboBox::down-arrow
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="NumberEdit"/>
      </item>
     </layout>
    </widget>

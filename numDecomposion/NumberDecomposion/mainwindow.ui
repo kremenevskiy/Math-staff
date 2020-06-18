@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>410</width>
-    <height>262</height>
+    <width>391</width>
+    <height>192</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -221,81 +221,54 @@ QComboBox::down-arrow
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>70</y>
-      <width>148</width>
-      <height>28</height>
+      <x>20</x>
+      <y>90</y>
+      <width>181</width>
+      <height>16</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>b :</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="blineEdit"/>
-     </item>
-    </layout>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Canonical decomposition : </string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="calculateButton">
+   <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>40</y>
-      <width>131</width>
-      <height>51</height>
+      <x>20</x>
+      <y>120</y>
+      <width>261</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>239</x>
+      <y>20</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>Calculate</string>
+     <string>Decopose</string>
     </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>160</y>
-      <width>178</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
-     <item>
-      <widget class="QLabel" name="label_4">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>LCM :</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="LcmEdit"/>
-     </item>
-    </layout>
    </widget>
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>148</width>
+      <x>20</x>
+      <y>20</y>
+      <width>201</width>
       <height>28</height>
      </rect>
     </property>
@@ -309,40 +282,12 @@ QComboBox::down-arrow
         </font>
        </property>
        <property name="text">
-        <string>a :</string>
+        <string>Number :</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="alineEdit"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>120</y>
-      <width>178</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>GCD :</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="GcdEdit"/>
+      <widget class="QLineEdit" name="lineEdit"/>
      </item>
     </layout>
    </widget>
@@ -352,7 +297,7 @@ QComboBox::down-arrow
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>410</width>
+     <width>391</width>
      <height>22</height>
     </rect>
    </property>

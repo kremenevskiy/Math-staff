@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+#include <QRegExp>
+#include <QRegExpValidator>
+#include <QtGlobal>
+
+#include "gcd_lcm.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +20,9 @@ class MainWindow : public QMainWindow
 public:
 	MainWindow(QWidget *parent = nullptr);
 	~MainWindow();
+
+public slots:
+	void findGCD_LCM();
 
 private:
 	Ui::MainWindow *ui;

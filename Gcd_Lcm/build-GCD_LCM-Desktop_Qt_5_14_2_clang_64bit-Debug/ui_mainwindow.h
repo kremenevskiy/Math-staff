@@ -26,23 +26,23 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *calculateButton;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *bLabel;
-    QLineEdit *bInput;
+    QLabel *label_2;
+    QLineEdit *blineEdit;
+    QPushButton *calculateButton;
     QWidget *layoutWidget_2;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *lcmLabel;
-    QLineEdit *lcmOut;
+    QLabel *label_4;
+    QLineEdit *LcmEdit;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
-    QLabel *aLabel;
-    QLineEdit *aInput;
+    QLabel *label;
+    QLineEdit *alineEdit;
     QWidget *widget1;
     QHBoxLayout *horizontalLayout_3;
-    QLabel *gcdLabel;
-    QLineEdit *gcdOut;
+    QLabel *label_3;
+    QLineEdit *GcdEdit;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -50,7 +50,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(410, 233);
+        MainWindow->resize(410, 262);
         MainWindow->setStyleSheet(QString::fromUtf8("/*-----QWidget-----*/   \n"
 "QWidget\n"
 "{\n"
@@ -261,78 +261,79 @@ public:
 ""));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        calculateButton = new QPushButton(centralwidget);
-        calculateButton->setObjectName(QString::fromUtf8("calculateButton"));
-        calculateButton->setGeometry(QRect(210, 30, 171, 51));
-        QFont font;
-        font.setBold(true);
-        font.setWeight(75);
-        calculateButton->setFont(font);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 60, 171, 28));
+        layoutWidget->setGeometry(QRect(30, 70, 148, 28));
         horizontalLayout_2 = new QHBoxLayout(layoutWidget);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        bLabel = new QLabel(layoutWidget);
-        bLabel->setObjectName(QString::fromUtf8("bLabel"));
+        label_2 = new QLabel(layoutWidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        QFont font;
+        font.setBold(true);
+        font.setWeight(75);
+        label_2->setFont(font);
 
-        horizontalLayout_2->addWidget(bLabel);
+        horizontalLayout_2->addWidget(label_2);
 
-        bInput = new QLineEdit(layoutWidget);
-        bInput->setObjectName(QString::fromUtf8("bInput"));
+        blineEdit = new QLineEdit(layoutWidget);
+        blineEdit->setObjectName(QString::fromUtf8("blineEdit"));
 
-        horizontalLayout_2->addWidget(bInput);
+        horizontalLayout_2->addWidget(blineEdit);
 
+        calculateButton = new QPushButton(centralwidget);
+        calculateButton->setObjectName(QString::fromUtf8("calculateButton"));
+        calculateButton->setGeometry(QRect(200, 40, 131, 51));
         layoutWidget_2 = new QWidget(centralwidget);
         layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(120, 160, 151, 28));
+        layoutWidget_2->setGeometry(QRect(30, 160, 178, 28));
         horizontalLayout_4 = new QHBoxLayout(layoutWidget_2);
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
-        lcmLabel = new QLabel(layoutWidget_2);
-        lcmLabel->setObjectName(QString::fromUtf8("lcmLabel"));
+        label_4 = new QLabel(layoutWidget_2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setFont(font);
 
-        horizontalLayout_4->addWidget(lcmLabel);
+        horizontalLayout_4->addWidget(label_4);
 
-        lcmOut = new QLineEdit(layoutWidget_2);
-        lcmOut->setObjectName(QString::fromUtf8("lcmOut"));
-        lcmOut->setReadOnly(true);
+        LcmEdit = new QLineEdit(layoutWidget_2);
+        LcmEdit->setObjectName(QString::fromUtf8("LcmEdit"));
 
-        horizontalLayout_4->addWidget(lcmOut);
+        horizontalLayout_4->addWidget(LcmEdit);
 
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 30, 171, 28));
+        widget->setGeometry(QRect(30, 30, 148, 28));
         horizontalLayout = new QHBoxLayout(widget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        aLabel = new QLabel(widget);
-        aLabel->setObjectName(QString::fromUtf8("aLabel"));
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setFont(font);
 
-        horizontalLayout->addWidget(aLabel);
+        horizontalLayout->addWidget(label);
 
-        aInput = new QLineEdit(widget);
-        aInput->setObjectName(QString::fromUtf8("aInput"));
+        alineEdit = new QLineEdit(widget);
+        alineEdit->setObjectName(QString::fromUtf8("alineEdit"));
 
-        horizontalLayout->addWidget(aInput);
+        horizontalLayout->addWidget(alineEdit);
 
         widget1 = new QWidget(centralwidget);
         widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(120, 120, 151, 28));
+        widget1->setGeometry(QRect(30, 120, 178, 28));
         horizontalLayout_3 = new QHBoxLayout(widget1);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        gcdLabel = new QLabel(widget1);
-        gcdLabel->setObjectName(QString::fromUtf8("gcdLabel"));
+        label_3 = new QLabel(widget1);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font);
 
-        horizontalLayout_3->addWidget(gcdLabel);
+        horizontalLayout_3->addWidget(label_3);
 
-        gcdOut = new QLineEdit(widget1);
-        gcdOut->setObjectName(QString::fromUtf8("gcdOut"));
-        gcdOut->setReadOnly(true);
+        GcdEdit = new QLineEdit(widget1);
+        GcdEdit->setObjectName(QString::fromUtf8("GcdEdit"));
 
-        horizontalLayout_3->addWidget(gcdOut);
+        horizontalLayout_3->addWidget(GcdEdit);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -351,11 +352,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "b :", nullptr));
         calculateButton->setText(QCoreApplication::translate("MainWindow", "Calculate", nullptr));
-        bLabel->setText(QCoreApplication::translate("MainWindow", "b :", nullptr));
-        lcmLabel->setText(QCoreApplication::translate("MainWindow", "LCM :", nullptr));
-        aLabel->setText(QCoreApplication::translate("MainWindow", "a :", nullptr));
-        gcdLabel->setText(QCoreApplication::translate("MainWindow", "GCD :", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "LCM :", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "a :", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "GCD :", nullptr));
     } // retranslateUi
 
 };

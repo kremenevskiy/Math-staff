@@ -43,6 +43,11 @@ void MainWindow::checkEquathn(){
 
 void MainWindow::solveEquathn(){
 	ui->solvingView->clear();
+
+	if(!checkValues()){
+		return;
+	}
+
 	int a = ui->aValue->text().toInt();
 	int b = ui->bValue->text().toInt();
 	int c = ui->cValue->text().toInt();
